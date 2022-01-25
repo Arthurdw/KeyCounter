@@ -1,0 +1,11 @@
+[Unit]
+Description=A simple application that counts the number of keys pressed
+
+[Service]
+User=root
+WorkingDirectory=/
+ExecStart=/bin/key-counter
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
